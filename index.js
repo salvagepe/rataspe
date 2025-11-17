@@ -91,7 +91,7 @@ client.on("interactionCreate", async (interaction) => {
             if (interaction.values[0] === "ip") {
                 await interaction.update({
                     content: "**📡IP de RATASPE📡**\n```rataspe.mc```",
-                    components: [botonVolver()],
+                    components: botonVolver(),
                 });
             }
 
