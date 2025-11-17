@@ -131,9 +131,10 @@ client.on("interactionCreate", async (interaction) => {
 
 client.login(TOKEN);
 
-// Servidor web para Replit 24/7
+const PORT = process.env.PORT || 3000;
+
 const http = require("http");
 http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Bot en funcionamiento");
-}).listen(3000);
+}).listen(PORT, () => console.log(`Servidor web escuchando en puerto ${PORT}`));
