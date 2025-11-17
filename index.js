@@ -90,7 +90,7 @@ client.on("interactionCreate", async (interaction) => {
             // OPCIÓN IP
             if (interaction.values[0] === "ip") {
                 await interaction.update({
-                    content: "**📡IP de RATASPE📡**\n```rataspe.mc```",
+                    content: "**📡IP de RATASPE📡**\n``````",
                     components: [botonVolver()],
                 });
             }
@@ -102,11 +102,11 @@ client.on("interactionCreate", async (interaction) => {
                     new ButtonBuilder()
                         .setLabel("📥Descargar Recursos")
                         .setStyle(ButtonStyle.Link)
-                        .setURL("https://tu-enlace-aqui.com"),
+                        .setURL("https://www.mediafire.com/file/i4wm1gg4p0hlobj/Recursos.zip/file"),
                 );
 
                 await interaction.update({
-                    content: "**Versión:** **1.20.1-FORGE-47.4.10**",
+                    content: "🔎Versión: **1.20.1-FORGE-47.4.10**",
                     components: [
                         botonDescarga, // 🔼 primer botón (descargar)
                         botonVolver(), // 🔽 segundo botón (volver)
