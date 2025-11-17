@@ -1,5 +1,5 @@
 {
-  "name": "discord-ip-bot",
+  "name": "bot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^17.2.3"
+    "dotenv": "^16.3.1"
   }
 }
